@@ -1,0 +1,73 @@
+<!DOCTYPE.html>
+<html>
+<head>
+	<title>Exercise 3</title>
+</head>
+<body>
+	<h1>Application for permission to date my daughter</h1>
+	<p><b>Note:</b>Form is be completed at least 21 days prior to date</p>
+	<fieldset>
+		<legend>Personal Details</legend>
+			<label for="Name">Name:</label>&#160
+			<input type="text" id="Name" name="Name" size="30" placeholder="Enter name here"><br>
+			<label for="add">Address:</label>&#160
+			<input type="text" id="add" name="Address" size="30" placeholder="Enter Address here"><br>
+			<label for="Email">Email:</label>&#160
+			<input type="text" id="Email" name="Email" size="30" placeholder="Enter email here"><br>
+			<label for="Phone">Phone Number:</label>&#160
+			<input type="text" id="phone" name="Phone Number" size="30"placeholder="Enter 10 digit number"><br>
+			<label for="iq">IQ:</label>&#160
+			<input type="text" id="iq" name="IQ" zise="30" placeholder="Enter IQ here"><br>
+			<label for="Gender">Gender:</label><br>
+			<input type="radio" id="gender" name="gender">
+			<label for="gender">Male</label><br>
+			<input type="radio" id="gender" name="gender">
+			<label for="gender">Female</label><br>
+			<input type="radio" id="gender" name="gender">
+			<label for="gender">Other</label><br>
+			<label for="date">Date of Proposed Outing</label>
+			<input type="date" size="30" placeholder="mm/dd/yyyy">
+	</fieldset>
+	<fieldset>
+		<form>
+		<p>Check All That Apply</p>
+		<input type="checkbox" name="Apply" value="I have tattoos and/or piercings">I have tattoos and/or piercings<br>
+		<input type="checkbox" name="Apply" value="I am more than 2 years older than my dughter">I am more than 2 years older than my dughter<br>
+		<input type="checkbox" name="Apply" value="I own a panel van or V8 ute">I own a panel van or V8 ute<br>
+		<input type="checkbox" name="Apply" value="I work full-time">I work full-time<br>
+		<input type="checkbox" name="Apply" value="My parents">My parents<br>
+		<input type="checkbox" name="Apply" value="Is the date at a well lit public location">Is the date at a well lit public location<br>
+	</fieldset>
+	<fieldset>
+		<label for="political">Political Persuasion:</label>&#160
+			<input list="Political Persuasion">
+			<datalist id="Political Persuasion">
+				<option value="Left Wing">
+				<option value="Right Wing">
+				<option value="Conservative">
+				<option value="Nazi">
+			</datalist>
+		<label for="Education">Education Level Completed:</label>
+			<input list="Education Level Completed">
+			<datalist id="Education Level Completed">
+				<option value="University">
+				<option value="College">
+				<option value="High School">
+				<option value="None">
+			</datalist>
+	</fieldset>
+	<fieldset>
+		<legend>Essay Section</legend>
+		<form action="action_page.php"method="Get">
+			<p>In 50 words or more explain why you want to date my daughter</p>
+			<textarea cols="50" rows="5" placeholder="Enter Text Here"></textarea>
+			<p>Please upload contact details for 2 references</p>
+			<textarea cols="50" rows="5" placeholder="Enter Text Here"></textarea><br>
+			<p>Upload Police Clearance Certificate,Bank Statement and Medical Certifiates here: <input type="file" value="Choose File">file choose</p> 
+		</form>
+	</fieldset>
+	<form action="action_page.php" >
+		<button type="button" onclick="alert('success!!!')">Send your application</button>
+	</form>
+</body>
+</html>
