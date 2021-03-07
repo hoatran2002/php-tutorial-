@@ -1,0 +1,41 @@
+.container{
+	display: inline;
+}
+body{
+	font-family: sans-serif;
+}
+a.click{
+	background-color: #77bddf;
+	border: 1px soild #77bddf;
+	position: relative;
+	border-radius: 100px;
+	padding: 15px;
+	color: white;
+}
+.click:hover{
+	background-color: blue;
+	transition: 0,6;
+	cursor: pointer;
+	text-decoration: none;
+}
+a.onclick{
+	background-color: green;
+	text-decoration: none;
+	border: 1px soild green;
+	border-radius: 100px;
+	padding: 15px;
+	position: relative;
+	color: white;
+}
+.onclick:hover{
+	background-color: #77bddf;
+	transition: 0,6;
+	text-decoration: none;
+}
+img{
+	width: 100%;
+}
+.row{
+	padding-left: 20px;
+	padding-right: 0px;
+}

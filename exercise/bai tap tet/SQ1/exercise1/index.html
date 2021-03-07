@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>exercise</title>
+	<meta charset="UTF 8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="container">
+		<div class="invalid-feedback">
+			<h2>TÍNH CHU VI VÀ DIỆN TÍCH HÌNH CHỮ NHẬT </h2>
+			<form action="/action_page.php" class="was-validated">
+				<label for="Length">Nhập vào chiều dài (đơn vị:met)</label>
+				<input type="number" name="Length " placeholder=" " required><br>
+				<label for="Width">Nhập vào chiều dài (đơn vị:met)</label>
+				<input type="number" name="Width" placeholder=" " required><br>
+			<button type="button" onclick="ready"class="btn btn-primary">TÍnh chu vi và diện tích</button>
+			</form>
+		<script>
+		$(document).ready(function () {
+		$(".container").append("<p></p>");
+		$("#calculate").click(function () {
+        var lengthValue=$("#length").val();
+        var widthValue=$("#width").val();
+        if(lengthValue==''||widthValue==''){
+            $("#in").text("Vui lòng nhập đầy đủ dữ liệu").css("color","red");
+        }else{
+            $("#in").html("<p>Chu vi là: "+(parseFloat(lengthValue)+parseFloat(widthValue))*2+"m <br>
+							  Diện tích là: "+(parseFloat(lengthValue)*parseFloat(widthValue))+"m<sup>2</sup></p>").css("color","black");
+        }
+    });
+});
+		</script>
+		</div>
+	</body>
+</html>

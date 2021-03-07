@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Exercise</title>
+	<meta charset="UTF 8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="container">
+			 <div class="row">
+				<div class="col-sm-6 m-auto">
+						<label for="Name">Name</label>
+						<input class="form-control" type="text" id="name" name="name" pattern="[a-z-A-Z]{0,25}" title="cần nhập chữ cái tối đa 25 kí tự" required>
+						<label for="Email">Email</label>
+						<input class="form-control" type="email" id=email name="email" pattern="[a-z-A-Z-0-9]{0,25}" title="cần nhập email tối đa 25 kí tự" required>
+						<label for="Country">Country</label>
+						<div class="form-group">
+							<select class="custom-select" id="countries" required>
+								<option value="">Select-country</option>
+								<option value="1">VIET NAM</option>
+								<option value="2">JAPAN</option>
+								<option value="3">USA</option>
+							</select>
+						</div>
+						<button class="btn btn-outline-secondary mt-2" type="button">Send info</button>
+						<p id="result"></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
