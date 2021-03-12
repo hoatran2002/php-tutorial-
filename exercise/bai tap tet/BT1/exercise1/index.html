@@ -11,19 +11,24 @@
 	</head>
 	<body>
 		<div class="container">
-			<form action="#" class="was-validated">
+			<form action="#" class="was-validated"method="post">
 				<div class="form-group">
 					<label for="fname">First name</label>
-					<input type="text" class="form-control" id="fname" name="fname" placeholder="Enter fname here" required >
+					<input type="text" class="form-control" id="fname" name="fname"  required >
 					<div class="valid-feedback">Valid.</div>
 					<div class="invalid-feedback">Please fill out this field.</div>
 				</div>
 				<div class="form-group">
 					<label for="lname">Last name</label> 
-					<input type="text" class="form-control" id="lname" name="lname" placeholder="Enter Lname here" required >
+					<input type="text" class="form-control" id="lname" name="lname" required >
 					<div class="valid-feedback">Valid.</div>
                     <div class="invalid-feedback">Please fill out this field.</div>
 				</div>
+				<div class="form-group">
+					<label for="lname">Email</label> 
+					<input type="text" class="form-control" id="email" name="email" required >
+					<div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
 				<div class="form-group">
 					<label for="gender">Male</label>
 					<input type="radio" id="gender" name="gender">
@@ -31,12 +36,35 @@
 					<input type="radio" id="gender" name="gender">
 				</div>
 				<div class="form-group">
-					<input type="date" class="form-control" placeholder="mm/dd/yyyy" required >
-					<div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+					State
+					<ul>
+						<li>
+	                        <a href="#">Johor</a>
+	                        <a href="#">Massachusetts</a>
+	                        <a href="#">Washington</a>
+	                    </li>
+                	</ul>
 				</div>
-					<button type="button" class="btn btn-primary">Submit</button>
+				<div class"form-ground">
+					Hobbies<br>
+					<label for="inputState">State</label>
+				      <select id="inputState" class="form-control">
+				        <option >Badminton</option>
+				        <option>Football</option>
+				        <option>Bicycle</option>
+				      </select>
+				</div>
+					<button type="button" class="btn btn-primary">Save record</button>
 			</form>
 		</div>
+	<?php
+	$stringToTest ="email";
+	$validatePassed =filter_var($stringToTest,FILER_VALIDATE_URL);
+	if($validatePassed){
+	echo'“Url is in correct format”';
+	}else{
+	echo'“Url is not in correct format”';
+	}
+	?>
 	</body>
 </html>
